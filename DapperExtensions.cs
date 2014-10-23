@@ -173,9 +173,6 @@ namespace DapperExtensions
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
             if (entityToDelete == null) throw new ArgumentNullException("entityToDelete", "entityToDelete cannot be null");
 
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
-
             InitializeCacheSweeper();
 
             var type = typeof(T);
@@ -219,9 +216,6 @@ namespace DapperExtensions
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
             if (id == null) throw new ArgumentNullException("id", "id cannot be null");
-
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
 
             InitializeCacheSweeper();
 
@@ -295,9 +289,6 @@ namespace DapperExtensions
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
             if (entityToInsert == null) throw new ArgumentNullException("entityToInsert", "entityToInsert cannot be null");
 
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
-
             InitializeCacheSweeper();
 
             var type = typeof(T);
@@ -348,9 +339,6 @@ namespace DapperExtensions
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
             if (entityToUpdate == null) throw new ArgumentNullException("entityToUpdate", "entityToUpdate cannot be null");
-
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
 
             var proxy = entityToUpdate as IProxy;
             if (proxy != null && !proxy.IsDirty) return false; // skip unchanged proxied entities
@@ -532,9 +520,6 @@ namespace DapperExtensions
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
 
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
-
             InitializeCacheSweeper();
 
             // Execute
@@ -558,9 +543,6 @@ namespace DapperExtensions
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
 
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
-
             InitializeCacheSweeper();
 
             // Execute
@@ -583,9 +565,6 @@ namespace DapperExtensions
         {
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
-
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
 
             InitializeCacheSweeper();
 
@@ -726,9 +705,6 @@ namespace DapperExtensions
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
 
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
-
             InitializeCacheSweeper();
 
             // Execute
@@ -755,9 +731,6 @@ namespace DapperExtensions
         {
             // Argument Validation
             if (connection == null) throw new ArgumentNullException("connection", "connection cannot be null");
-
-            // Make sure ConnectionState == Open, required by Dapper
-            if (connection.State != ConnectionState.Open) throw new ApplicationException("ConnectionState must be Open, current state: " + connection.State);
 
             InitializeCacheSweeper();
 

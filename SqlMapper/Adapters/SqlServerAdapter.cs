@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Extensions.SqlMapper.Adapters
+namespace DapperExtensions.SqlMapper.Adapters
 {
     public class SqlServerAdapter : ISqlAdapter
     {

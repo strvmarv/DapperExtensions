@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Extensions.SqlMapper.Proxy
+namespace DapperExtensions.SqlMapper.Proxy
 {
     public interface IProxy
     {

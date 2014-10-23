@@ -6,7 +6,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading;
 
-namespace Extensions.SqlMapper.Proxy
+namespace DapperExtensions.SqlMapper.Proxy
 {
     public class ProxyGenerator
     {

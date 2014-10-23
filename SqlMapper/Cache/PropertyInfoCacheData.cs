@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Extensions.SqlMapper.Cache
+namespace DapperExtensions.SqlMapper.Cache
 {
     public class PropertyInfoCacheData
     {
